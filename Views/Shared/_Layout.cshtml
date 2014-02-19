@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="/Content/Site.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <nav><a href="/" class="active">首页</a><a href="/frontend">前端</a><a href="/backend">后端</a><a href="/bytalk">杂谈</a><a href="javascript:(0)">网站</a><a href="javascript:(0)">关于我</a></nav>
+    </header>
+    @RenderBody()
+
+    <footer class="clearfix">
+        @RenderSection("friendLink", false)
+        <div class="copyright">版权所有，保留一切权利！ © 2014 潘无处不在</div>
+
+    </footer>
+</body>
+<script src="/Scripts/jquery-1.10.2.js"></script>
+<script src="/Scripts/bootstrap.min.js"></script>
+<script src="/Scripts/index.js"></script>
+<script type="text/javascript">
+    App.init();
+
+</script>
+</html>
