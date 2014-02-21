@@ -1,183 +1,155 @@
-﻿body
-{
+﻿body {
     background-color: #eeeeee;
+    background-color: #fff;
+    color: #333;
     font-size: 14px;
     font-family: arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
-    color: #333;
-    background-color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6
-{
+h1, h2, h3, h4, h5, h6 {
     font-family: "Microsoft YaHei", Verdana, Helvetica, Sans-Serif;
 }
 
-header
-{
-    height: 50px;
-    width: 100%;
+header {
     position: fixed;
+    width: 100%;
+    height: 50px;
 }
 
-.header
-{
+.header {
     z-index: 100;
     border-bottom: 1px solid #ddd;
     background: rgba(255,255,255,.9);
 }
 
-footer
-{
-    border-top: 1px solid #ddd;
-    background-color: #f5f5f5;
-    padding-left: 45px;
+footer {
     margin-top: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 45px;
+    border-top: 1px solid #ddd;
+    background-color: #f5f5f5;
 }
 
-nav
-{
+nav {
     position: fixed;
     top: 20px;
     right: 30px;
     z-index: 100;
 }
 
-    nav a
-    {
+    nav a {
         padding: 0px 15px;
         border-right: 1px dotted #eee;
-        font-size: 14px;
         color: #696464;
         letter-spacing: 1px;
+        font-size: 14px;
     }
 
-a:hover
-{
+a:hover {
     color: #7B838A;
 }
 
-nav a:last-child
-{
+nav a:last-child {
     border-right: none;
 }
 
-nav a.active
-{
-    font-weight: bold;
+nav a.active {
     color: #232323;
+    font-weight: bold;
 }
 
 
 
-ul
-{
-    list-style-type: none;
+ul {
+    margin-bottom: 0;
     padding: 0px;
+    list-style-type: none;
 }
 
-#pan
-{
+#pan {
     color: #0024ff;
 }
 
-.main
-{
+.main {
     margin-top: 100px;
 }
 
 
 /*index*/
-#sun
-{
-    width: 250px;
-    margin-left: 80px;
+#sun {
     z-index: 500;
+    margin-left: 80px;
+    width: 250px;
 }
 
-    #sun h4
-    {
+    #sun h4 {
         display: block;
         float: right;
     }
 
-    #sun h3
-    {
+    #sun h3 {
         margin-top: 0px;
         padding-top: 20px;
     }
 
-#content
-{
+#content {
     margin-top: 180px;
+    margin-bottom: 150px;
     margin-left: 180px;
     padding-left: 80px;
-    margin-bottom: 150px;
     border-left: 1px dashed #eee;
 }
 
-    #content h1
-    {
+    #content h1 {
         text-shadow: 0px 0px 8px #515151;
-        -webkit-animation: myname 2s ease-in-out infinite;
         font-weight: 500;
+        -webkit-animation: myname 2s ease-in-out infinite;
     }
 
-@-webkit-keyframes myname
-{
-    0%
-    {
+@-webkit-keyframes myname {
+    0% {
         text-shadow: none;
     }
 
-    50%
-    {
+    50% {
         text-shadow: 0px 0px 8px #515151;
     }
 
-    100%
-    {
+    100% {
         text-shadow: none;
     }
 }
 
-#content .description
-{
+#content .description {
     color: #696464;
     font-size: 14px;
 }
 
-.newslist
-{
-    padding-left: 30px;
+.newslist {
     padding-top: 60px;
+    padding-left: 30px;
     background: url(images/hr.png) top center no-repeat;
 }
 
-    .newslist section
-    {
+    .newslist section {
         float: left;
         margin-right: 0px;
     }
 
-    .newslist li
-    {
+    .newslist li {
         margin-bottom: 2px;
     }
 
-        .newslist li:last-child
-        {
+        .newslist li:last-child {
             margin-bottom: 0px;
         }
 
-    .newslist a
-    {
+    .newslist a {
         color: #666;
     }
 
-    .newslist li a:hover
-    {
+    .newslist li a:hover {
         background-color: #000;
         color: #fff;
         text-decoration: none;
@@ -187,126 +159,104 @@ ul
         transition: all .20s ease-in-out;
     }
 
-    .newslist h4
-    {
+    .newslist h4 {
         display: inline-block;
     }
 
-    .newslist .more
-    {
+    .newslist .more {
         float: right;
         margin-top: 10px;
     }
 
-a.text-warning
-{
+a.text-warning {
     color: #d70a0a;
 }
 /*FrontEnd*/
-.mainContent
-{
+.mainContent {
     border-right: 1px solid #ddd;
 }
 
-    .mainContent a
-    {
+    .mainContent a {
         color: #000;
     }
 
-    .mainContent .table
-    {
+    .mainContent .table {
         background-color: #fff;
     }
 
-        .mainContent .table th, .mainContent .table td
-        {
-            border: none;
+        .mainContent .table th, .mainContent .table td {
             padding: 5px;
+            border: none;
         }
 
-        .mainContent .table tr
-        {
+        .mainContent .table tr {
             border-left: 3px solid #fff;
         }
 
-        .mainContent .table tbody tr:hover
-        {
+        .mainContent .table tbody tr:hover {
             border-left: 3px solid #428bca;
             background-color: #f6f6f6;
         }
 
-    .mainContent .table_hover tr:hover, .mainContent .table_hover tr:hover a
-    {
+    .mainContent .table_hover tr:hover, .mainContent .table_hover tr:hover a {
     }
 
-.sideBar
-{
+.sideBar {
 }
 
-.sideTitle
-{
-    font-size: 15px;
-    border-bottom: 1px solid #eaeaea;
-    line-height: 20px;
+.sideTitle {
     padding: 5px 4px;
+    border-bottom: 1px solid #eaeaea;
     font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
 }
 
-.sideContent
-{
+.sideContent {
     padding: 4px 4px;
 }
 
-    .sideContent ul li
-    {
+    .sideContent ul li {
         height: 26px;
         line-height: 26px;
     }
 
-        .sideContent ul li a
-        {
-            color: #333;
+        .sideContent ul li a {
             max-width: 287px;
+            color: #333;
             white-space: nowrap;
         }
 
-            .sideContent ul li a:hover
-            {
-                text-shadow: 1px 2px 4px #555;
-                -webkit-animation: link-hover 1300ms ease-in-out infinite forwards;
+            .sideContent ul li a:hover {
                 text-decoration: none;
-                transition: text-shadow .25s ease-in-out;
+                text-shadow: 1px 2px 4px #555;
                 -moz-transition: text-shadow .25s ease-in-out;
                 -o-transition: text-shadow .25s ease-in-out;
                 -webkit-transition: text-shadow .25s ease-in-out;
+                transition: text-shadow .25s ease-in-out;
+                -webkit-animation: link-hover 1300ms ease-in-out infinite forwards;
             }
 
-@-webkit-keyframes link-hover
-{
-    0%
-    {
+@-webkit-keyframes link-hover {
+    0% {
         text-shadow: none;
     }
 
-    50%
-    {
+    50% {
         text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
     }
 
-    100%
-    {
+    100% {
         text-shadow: none;
     }
 }
 
-.excerpt:not(:last-child)
-{
+.excerpt:not(:last-child) {
     padding-bottom: 24px;
     border-bottom: 1px solid #ddd;
 }
 
-.excerpt:hover
-{
+.excerpt:hover {
     background-color: #efefef;
     -moz-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
@@ -314,52 +264,44 @@ a.text-warning
     transition: all .25s ease-in-out;
 }
 
-.excerpt h4
-{
+.excerpt h4 {
     margin: 0px;
     padding-top: 10px;
 }
 
-    .excerpt h4 a
-    {
+    .excerpt h4 a {
         color: #0088DB;
     }
 
-.info
-{
+.info {
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
-    .info i
-    {
+    .info i {
         margin-right: 8px;
         color: #555;
     }
 
-.time, .cat, .view, .comments
-{
+.time, .cat, .view, .comments {
     margin-right: 20px;
 }
 
-.labels li
-{
+.labels li {
     float: left;
     margin-right: 4px;
     margin-bottom: 8px;
 }
 
-    .labels li a
-    {
+    .labels li a {
+        padding: 4px 4px;
         border: 1px solid #cfcfcf;
         border-radius: 3px;
-        padding: 4px 4px;
     }
 
-.sideContent .labels li a:hover
-{
-    color: #fff;
+.sideContent .labels li a:hover {
     background-color: #0088DB;
+    color: #fff;
     -moz-transition: background-color .20s ease-in-out;
     -o-transition: background-color .20s ease-in-out;
     -webkit-transition: background-color .20s ease-in-out;
@@ -368,71 +310,124 @@ a.text-warning
 
 
 
-.linksContent
-{
+.linksContent {
     text-align: center;
 }
 
-    .linksContent li
-    {
+    .linksContent li {
         float: left;
         padding-right: 20px;
     }
 
-.copyright
-{
-    text-align: center;
+.copyright {
     color: #696464;
+    text-align: center;
 }
 
-.articleTitle, .articleContent, .tag
-{
+.articleTitle, .articleContent, .tag, .share {
     border-bottom: 1px solid #ddd;
 }
 
-.tag
-{
-    padding-bottom: 8px;
+.tag, .share {
+    padding: 8px 0px;
 }
 
+.share {
+    padding-bottom: 4px;
+}
 
-.articleTitle h3
-{
+.articleTitle h3 {
     color: #0088DB;
     font-weight: bold;
 }
 
-.articleTitle .info
-{
+.articleTitle .info {
     font-size: 12px;
 }
 
 
-.articleContent p
-{
+.articleContent p {
     text-indent: 2em;
     line-height: 25px;
 }
 
 
-.tag span
-{
+.tag span, .share span {
     float: left;
 }
 
-.tag ul li
-{
+
+.tag ul li {
+    float: left;
     margin-right: 8px;
-    float: left;
 }
 
-.tag a, .articleNav a
-{
+.tag a, .articleNav a {
     color: #0088DB;
 }
 
-.articleNav
-{
+.articleNav {
     padding: 10px 0px;
 }
 
+.share span {
+    padding-top: 2px;
+}
+
+.share ul li {
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.shareIcon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(images/share_v2.1.png) no-repeat;
+    -moz-transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear;
+    -o-transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear;
+    -webkit-transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear;
+    transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear;
+}
+
+.shareQzone {
+    background-position: -100px 0;
+}
+
+.shareSina {
+    background-position: -50px 0;
+}
+
+.shareRenren {
+    background-position: -150px 0px;
+}
+
+a:hover .shareQzone {
+    background-position: -100px -25px;
+}
+
+a:hover .shareSina {
+    background-position: -50px -25px;
+}
+
+a:hover .shareRenren {
+    background-position: -150px -25px;
+}
+
+#good {
+    float: right;
+    width: 32px;
+    height: 24px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
+.abTitle h3 {
+    text-align: center;
+}

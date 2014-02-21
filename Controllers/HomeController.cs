@@ -34,6 +34,13 @@ namespace blog.Controllers
         public ActionResult NewsDetails()
         {
             return View();
+
+        }
+
+        public ActionResult AboutMe()
+        {
+
+            return View(); 
         
         }
 

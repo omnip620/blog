@@ -18,9 +18,25 @@
 
     }
 
+    var good = function () {
+        var $good = $("#good");
+
+        $good.mouseover(function () {
+            $good.html('<i class="icon-thumbs-up" ></i>');
+            $good.css('font-size','18px')
+        });
+
+        $good.mouseout(function () {
+            $good.html('<span>1244</span>');
+            $good.css({ 'font-size': '12px'});
+        });
+
+    }
+
     return {
         init: function () {
             header();
+            good();
         }
 
     }
