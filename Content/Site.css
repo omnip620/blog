@@ -227,7 +227,8 @@ a.text-warning {
             white-space: nowrap;
         }
 
-            .sideContent ul li a:hover {
+            .sideContent ul li a:hover
+            {
                 text-decoration: none;
                 text-shadow: 1px 2px 4px #555;
                 -moz-transition: text-shadow .25s ease-in-out;
@@ -235,6 +236,9 @@ a.text-warning {
                 -webkit-transition: text-shadow .25s ease-in-out;
                 transition: text-shadow .25s ease-in-out;
                 -webkit-animation: link-hover 1300ms ease-in-out infinite forwards;
+                -moz-animation: link-hover 1300ms ease-in-out infinite forwards;
+                -o-animation: link-hover 1300ms ease-in-out infinite forwards;
+                animation: link-hover 1300ms ease-in-out infinite forwards;
             }
 
 @-webkit-keyframes link-hover {

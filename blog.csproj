@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>blog</RootNamespace>
     <AssemblyName>blog</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -50,9 +50,9 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -92,6 +92,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -100,6 +101,66 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\admin\css\default.css" />
+    <Content Include="Content\admin\css\DT_bootstrap.css" />
+    <Content Include="Content\admin\css\plugins.css" />
+    <Content Include="Content\admin\css\select2_metro.css" />
+    <Content Include="Content\admin\css\style-metronic.css" />
+    <Content Include="Content\admin\css\style-responsive.css" />
+    <Content Include="Content\admin\css\style.css" />
+    <Content Include="Content\admin\images\ajax-loading.gif" />
+    <Content Include="Content\admin\images\avatar.png" />
+    <Content Include="Content\admin\images\avatar_small.png" />
+    <Content Include="Content\admin\images\icon-color-close.png" />
+    <Content Include="Content\admin\images\icon-color.png" />
+    <Content Include="Content\admin\images\logo-big.png" />
+    <Content Include="Content\admin\images\logo.png" />
+    <Content Include="Content\admin\images\menu-toggler.png" />
+    <Content Include="Content\admin\images\portlet-collapse-icon-white.png" />
+    <Content Include="Content\admin\images\portlet-collapse-icon.png" />
+    <Content Include="Content\admin\images\portlet-config-icon-white.png" />
+    <Content Include="Content\admin\images\portlet-config-icon.png" />
+    <Content Include="Content\admin\images\portlet-expand-icon-white.png" />
+    <Content Include="Content\admin\images\portlet-expand-icon.png" />
+    <Content Include="Content\admin\images\portlet-reload-icon-white.png" />
+    <Content Include="Content\admin\images\portlet-reload-icon.png" />
+    <Content Include="Content\admin\images\portlet-remove-icon-white.png" />
+    <Content Include="Content\admin\images\portlet-remove-icon.png" />
+    <Content Include="Content\admin\images\remove-icon-small.png" />
+    <Content Include="Content\admin\images\search-icon.png" />
+    <Content Include="Content\admin\images\select2.png" />
+    <Content Include="Content\admin\images\sidebar-toggler.jpg" />
+    <Content Include="Content\admin\images\sort_asc.png" />
+    <Content Include="Content\admin\images\sort_both.png" />
+    <Content Include="Content\admin\images\sort_desc.png" />
+    <Content Include="Content\admin\images\sprite.png" />
+    <Content Include="Content\admin\images\syncfusion-icons-white.png" />
+    <Content Include="Content\admin\images\syncfusion-icons.png" />
+    <Content Include="Content\admin\js\app.js" />
+    <Content Include="Content\admin\js\autoHeightTextaera.js" />
+    <Content Include="Content\admin\js\bootstrap.min.js" />
+    <Content Include="Content\admin\js\dataTables.fnReloadAjax.js" />
+    <Content Include="Content\admin\js\DT_bootstrap.js" />
+    <Content Include="Content\admin\js\index.js" />
+    <Content Include="Content\admin\js\jquery-1.10.1.min.js" />
+    <Content Include="Content\admin\js\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Content\admin\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="Content\admin\js\jquery.blockui.min.js" />
+    <Content Include="Content\admin\js\jquery.cookie.min.js" />
+    <Content Include="Content\admin\js\jquery.dataTables.js" />
+    <Content Include="Content\admin\js\jquery.slimscroll.min.js" />
+    <Content Include="Content\admin\js\jquery.uniform.min.js" />
+    <Content Include="Content\admin\js\jquery.validate.min.js" />
+    <Content Include="Content\admin\js\login.js" />
+    <Content Include="Content\admin\js\question.js" />
+    <Content Include="Content\admin\js\select2.min.js" />
+    <Content Include="Content\admin\js\sidebar.js" />
+    <Content Include="Content\admin\js\table-editable.js" />
+    <Content Include="Content\admin\js\table-feedback.js" />
+    <Content Include="Content\admin\js\table-managed.js" />
+    <Content Include="Content\admin\js\table-pageset.js" />
+    <Content Include="Content\admin\js\Tools.js" />
+    <Content Include="Content\admin\js\twitter-bootstrap-hover-dropdown.min.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -115,6 +176,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <None Include="Properties\PublishProfiles\blog.pubxml" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
@@ -131,6 +193,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\AboutMe.cshtml" />
+    <Content Include="Views\Admin\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Admin\Articles.cshtml" />
+    <Content Include="Views\Admin\AdminHeader.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
